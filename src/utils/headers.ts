@@ -1,7 +1,7 @@
 const headerMap: Record<string, string> = {
   'X-Cookie': 'Cookie',
   'X-Referer': 'Referer',
-  'X-Origin': 'https://www.vidbinge.com',
+  'X-Origin': 'Origin',
   'X-User-Agent': 'User-Agent',
   'X-X-Real-Ip': 'X-Real-Ip',
 };
