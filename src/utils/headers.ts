@@ -63,7 +63,6 @@ export function getAfterResponseHeaders(
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Expose-Headers': '*',
     Vary: 'Origin',
-    'Origin': 'https://www.vidbinge.com',
     'X-Final-Destination': finalUrl,
     ...output,
   };
