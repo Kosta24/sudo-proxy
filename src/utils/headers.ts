@@ -47,8 +47,6 @@ export function getProxyHeaders(headers: Headers): Headers {
     copyHeader(headers, output, entry[0], entry[1]);
   });
 
-  output.set('Origin', 'https://www.vidbinge.com);
-
   return output;
 }
 
@@ -65,6 +63,7 @@ export function getAfterResponseHeaders(
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Expose-Headers': '*',
     Vary: 'Origin',
+    'Origin': 'https://www.vidbinge.com',
     'X-Final-Destination': finalUrl,
     ...output,
   };
