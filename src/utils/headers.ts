@@ -47,10 +47,7 @@ export function getProxyHeaders(headers: Headers): Headers {
     copyHeader(headers, output, entry[0], entry[1]);
   });
 
-   // Imposta l'header Origin se non esiste già
-  if (!headers.has('Origin')) {
-    output.set('Origin', 'https://your-custom-origin.com');
-  }
+  output.set('Origin', 'https://www.vidbinge.com);
 
   return output;
 }
